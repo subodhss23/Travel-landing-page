@@ -31,7 +31,7 @@
   /* border: 1px solid white; */
 }
 
-.navigation > #travel{
+.navigation > .travel{
   font-family: cursive;
   font-size: 4em;
 }
@@ -53,8 +53,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-
 
 .hero > div{
   display: flex;
@@ -86,4 +84,26 @@
   .large{
     grid-row: span 2;
     grid-column: span 2;
+  }
+
+
+  @media screen and (max-width:700px){
+    .header{
+      height: 70vh;
+    }
+
+    .navigation,
+    .header-content{
+      display: flex;
+      flex-direction: column;
+      font-size: 1em;
+    }
+
+    .navigation{
+     padding-top: 5em;
+    }
+
+    .navigation > .travel {
+      font-size: 2em;
+    }
   }
